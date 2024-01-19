@@ -90,11 +90,13 @@ class Cache:
             self.size -= 1
 
 cache = Cache(capacity=3)
-cache.put("first", 1, 5)
-cache.put("second", 2, 5)
+cache.put("first", 10, 5)
+cache.put("second", 20, 5)
 
 print(cache.get("first"))
+#output > 10
 print(cache.get("second"))
+#output > 20
 
 """
 Hash table is used
